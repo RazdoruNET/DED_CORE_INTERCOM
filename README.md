@@ -183,6 +183,13 @@ pio device monitor -b 115200
 * [`docs/06-production-security.md`](./docs/06-production-security.md) — серия.
 * [`docs/07-roadmap.md`](./docs/07-roadmap.md) — этапы гарнитуры.
 
+## Поддержка
+
+- [Сайт платформы — dedbox.pro](https://dedbox.pro)
+- [Группа ВКонтакте](https://vk.com/ded_moto_sys)
+- [Группа Telegram](https://t.me/DED_MOTO_SYSTEM)
+- [Курилка Telegram](https://t.me/+kN1d2EnrmdkyYmFi)
+
 ## Лицензия
 
 Прошивка, документация и описания протоколов распространяются по
