@@ -90,13 +90,13 @@ DED_CORE_INTERCOM/
 
 `firmware/src/config/Secrets.h` в публикацию не входит: там доверенный CA
 платформы и закреплённый ключ подписи привязки. Шаблон —
-`firmware/src/config/Trust.example.h`.
+`firmware/src/config/Secrets.example.h`.
 
 ## Сборка
 
 ```bash
 cd firmware
-cp src/config/Trust.example.h src/config/Secrets.h
+cp src/config/Secrets.example.h src/config/Secrets.h
 pio run -e esp32s3_intercom
 pio run -e esp32s3_intercom -t upload
 pio device monitor -b 115200

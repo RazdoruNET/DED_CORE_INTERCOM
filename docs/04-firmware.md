@@ -12,7 +12,7 @@ firmware/
 └── src/
     ├── main.cpp
     ├── config/AppConfig.h        пины, лимиты, профиль платы, версия
-    ├── config/Trust.example.h  шаблон локальных секретов
+    ├── config/Secrets.example.h  шаблон локальных секретов
     ├── proto/Protocol.h          кадры: типы, сборка/разбор
     ├── audio/AudioPipeline.*     I2S вход/выход, преролл, VAD, уровень
     ├── net/DeviceConfig.*        NVS: Wi-Fi, ключ устройства, сервер
@@ -47,7 +47,7 @@ pio device monitor -b 115200
 Перед первой сборкой скопируйте шаблон секретов:
 
 ```bash
-cp src/config/Trust.example.h src/config/Secrets.h
+cp src/config/Secrets.example.h src/config/Secrets.h
 ```
 
 `Secrets.h` не публикуется: в нём доверенный CA платформы и закреплённый ключ
@@ -212,7 +212,7 @@ SPEAKING ──"стоп" / barge_in──► IDLE
 
 | Проверка | Как |
 |---|---|
-| сборка без `Secrets.h` | `cp config/Trust.example.h config/Secrets.h` и `pio run`: должна пройти |
+| сборка без `Secrets.h` | `cp config/Secrets.example.h config/Secrets.h` и `pio run`: должна пройти |
 | задержка обращения до первого звука | счётчик в прошивке печатает мс в лог |
 | потери кадров | `seq` вниз, раз в 10 с в `STATE` |
 | heap watermark | минимум `esp_get_free_heap_size()` за сессию, в `STATE` |

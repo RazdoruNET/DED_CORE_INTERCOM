@@ -54,7 +54,7 @@ jobs:
       - run: pip install --upgrade platformio
       # Secrets.h в репозитории нет и быть не должно: собираем на заглушках,
       # они дают «безопасный отказ» — TLS не поднимется, но прошивка соберётся.
-      - run: cp firmware/src/config/Trust.example.h firmware/src/config/Secrets.h
+      - run: cp firmware/src/config/Secrets.example.h firmware/src/config/Secrets.h
       - name: Сборка профиля гарнитуры
         working-directory: firmware
         run: pio run -e esp32s3_intercom

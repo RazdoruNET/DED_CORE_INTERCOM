@@ -4,7 +4,7 @@
 .dev/
 
 # Секреты конкретной сборки: доверенный CA платформы и закреплённый ключ
-# подписи привязки. Шаблон — firmware/src/config/Trust.example.h.
+# подписи привязки. Шаблон — firmware/src/config/Secrets.example.h.
 firmware/src/config/Secrets.h
 
 # PlatformIO: собранные образы, карта прошивки и скачанные библиотеки.
